@@ -1,0 +1,84 @@
+/* Importation de la police Montserrat pour un style moderne */
+body, h2, label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Arrière-plan avec animation de dégradé */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: gradientAnimation 6s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Style du formulaire */
+.login-form {
+    max-width: 380px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.login-form:hover {
+    transform: translateY(-5px);
+}
+
+/* Titre du formulaire */
+h2 {
+    color: #764ba2;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Champs d'entrée */
+.form-control {
+    background: #f7f7f7;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(118, 75, 162, 0.2);
+    outline: none;
+}
+
+/* Style du bouton de connexion */
+.btn-custom {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.05);
+}
+
+/* Style des labels */
+label {
+    font-weight: 500;
+    color: #333;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    display: block;
+}
